@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css2?family=Metrophobic&display=swap');
+
+@font-face {
+   font-family: 'OpenSans';
+   src: url('../fonts/Open_Sans/static/OpenSans-Bold.ttf') format('truetype');
+}
+
+body {
+   margin: 0;
+   padding: 0;
+   background-color: #fff;
+}
+
+p {
+   font-size: 16px;
+   line-height: 1.5;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Menu */
+.logo {
+   width: 30%;
+   height: auto;
+}
+
+.navbar {
+   background-color: rgb(238, 238, 238);
+   font-size: 17px;
+   font-family: 'Roboto-Regular', sans-serif;
+}
+
+.nav-item {
+   padding-right: 7px;
+   padding-left: 7px;
+}
+
+nav li:hover {
+   background-color: #bdbdbd;
+   border-radius: 8px;
+   transition: border-radius 0.5s ease-in-out;
+   transition-duration: 0s;
+}
+
+/* Prefeitura */
+.row {
+   margin-top: 20px;
+}
+
+.fotosPrefeitos {
+   width: 20%;
+   height: auto;
+}
+
+/* Hino Municipal */
+.verso {
+   line-height: 32px;
+   text-align: center;
+   margin-bottom: 15px;
+   color: #383838;
+   ;
+}
+
+/* Cartilha EMHUR*/
+.iconcart {
+   font-size: 30px;
+   color: rgb(211, 0, 0);
+}
+
+/* Jornal Trabalhando */
+.card-img-top-jornal {
+   height: 350px;
+   object-fit: cover;
+}
+
+.card-link:hover {
+   background-color: #efefef;
+}
+
+/* plano diretor */
+
+.planoDiretor {
+   overflow: hidden;
+   height: 70vh;
+}
+
+.video {
+   width: 560px;
+   height: 315px;
+}
+
+@media screen and (max-width: 1152px) {
+   .planoDiretor {
+      overflow: hidden;
+      height: auto;
+   }
+}
+
+@media screen and (max-width: 600px) {
+   .video {
+      width: 300px;
+      height: auto;
+   }
+}
+
+/* Footer */
+.logoFooter {
+   width: 10%;
+   height: auto;
+}
+
+.footer {
+   background-color: rgb(248, 248, 248);
+   margin-top: 10vh;
+}
+
+.titulo-footer {
+   font-size: 16px;
+   font-family: 'OpenSans', sans-serif !important;
+   color: #383838;
+}
+
+.texto-footer {
+   font-size: 14px;
+   font-family: Arial, Helvetica, sans-serif;
+   color: #383838
+}
+
+/* Todos os cards */
+.card {
+   border: 0;
+   background-color: #f6f6f6;
+}
+
+/* Index Youtube */
+.youtube {
+   background: rgb(255, 213, 37);
+   background: linear-gradient(90deg, rgba(255, 211, 37, 0.707) 21%, #f79533d7 100%);
+}
+
+.p-lg {
+   padding: 15px !important;
+}
+
+.icone {
+   font-size: 3em;
+}
+
+/* Icones acesso rapido */
+.gradient-icon-1 {
+   background: linear-gradient(to right, #84c44b, #19b14e);
+   /* substitua pelas cores desejadas */
+   background-clip: text;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+
+.gradient-icon-2 {
+   background: linear-gradient(to right, #f79028, #ffd525);
+   /* substitua pelas cores desejadas */
+   background-clip: text;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+
+.gradient-icon-3 {
+   background: linear-gradient(to right, #3ec3f4, #008dd0);
+   /* substitua pelas cores desejadas */
+   background-clip: text;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+
+/* Titulos acesso rapido */
+.acesso-rapido-1 {
+   font-size: 20px;
+   font-family: 'OpenSans', sans-serif !important;
+   background: linear-gradient(to right, #84c44b, #19b14e);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+
+.acesso-rapido-2 {
+   font-size: 20px;
+   font-family: 'OpenSans', sans-serif !important;
+   background: linear-gradient(to right, #f79028, #ffd525);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+
+.acesso-rapido-3 {
+   font-size: 20px;
+   font-family: 'OpenSans', sans-serif !important;
+   background: linear-gradient(to right, #3ec3f4, #008dd0);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+
+/* Cores de cada Pag */
+
+.titulo {
+   font-size: 30px;
+   font-family: 'OpenSans', sans-serif !important;
+   background: linear-gradient(to right, #84c44b, #008dd0);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+
+.titulo2 {
+   font-size: 30px;
+   color: rgb(58, 58, 58);
+   font-family: 'OpenSans', sans-serif !important;
+}
+
+.prefeitura {
+   font-size: 30px;
+   font-family: 'OpenSans', sans-serif !important;
+   background: linear-gradient(to right, #f79028, #ffd525);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+
+.canais {
+   font-size: 30px;
+   font-family: 'OpenSans', sans-serif !important;
+   background: linear-gradient(to right, #3ec3f4, #008dd0);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+
+.gestao {
+   font-size: 30px;
+   font-family: 'OpenSans', sans-serif !important;
+   background: linear-gradient(to right, #84c44b, #008dd0);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+
+/* Lista de eventos */
+.eventos {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-bottom: 20px;
+}
+
+.evento-imagem {
+   flex: 1;
+   margin-right: 20px;
+}
+
+.evento-detalhes {
+   flex: 2;
+}
+
+.evento-botao {
+   text-align: right;
+}
+
+/* Redes Socias */
+.row-socias {
+   margin-top: 0 !important;
+}
+
+img {
+   object-fit: cover;
+   overflow: hidden;
+}
+
+/* Carrossel */
+.titulo-carrossel {
+   font-family: 'OpenSans', sans-serif;
+}
+
+.text-carrossel {
+   font-size: 20px;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Noticia */
+.categoria-noticia {
+   font-size: 13px;
+   font-family: 'OpenSans', sans-serif;
+}
+
+.titulo-noticia {
+   font-size: 16px;
+   font-family: 'OpenSans', sans-serif;
+}
+
+.subtitulo-noticia {
+   font-size: 14px;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+.cor-1 {
+   color: #19b14e;
+}
+
+.cor-2 {
+   color: #84c44b;
+}
+
+.cor-3 {
+   color: #008dd0;
+}
+
+.cor-4 {
+   color: #00afef;
+}
+
+.cor-5 {
+   color: #f79028;
+}
+
+.cor-6 {
+   color: #ffd525;
+}
+
+.card-img-top {
+   width: 100%;
+   height: 28vh;
+}
+
+.titulo-noticia-aberta {
+   font-size: 22px;
+   font-family: 'OpenSans', sans-serif;
+   color: #383838;
+}
+
+.subtitulo-noticia-aberta {
+   font-size: 18px;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+.img-destaque-noticia {
+   width: 100%;
+   height: 70vh;
+   margin-top: 2vh;
+   margin-bottom: 2vh;
+   object-fit: cover;
+   object-fit: contain;
+}
+
+.img-segundaria {
+   max-width: 100%;
+   height: 50vh;
+   margin-top: 2vh;
+   margin-bottom: 2vh;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   vertical-align: middle;
+   object-fit: cover;
+   object-fit: contain;
+}
+
+/* Destaque Plano Diretor */
+.card-img-top-plano {
+   width: 100%;
+   height: auto;
+}
+
+/* Download de marcas */
+.card-img-top-marcas {
+   width: 60%;
+   height: auto;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+}

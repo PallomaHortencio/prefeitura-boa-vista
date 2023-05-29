@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prefeitura Municipal de Boa Vista</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="../../css/style.css">
+</head>
+
+<body>
+
+  <!-- Menu -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="" href="#">
+        <img class="logo" src="../../images/logo_horizontal.png" alt="Logo Prefeitura">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="../../index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../../prefeitura.html">Prefeitura</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../../noticias.html">Noticias</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Canais
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="../../canal-cidadao/projetos.html">Canal do Cidadão</a></li>
+              <li><a class="dropdown-item" href="../../cultura/cultura.html">Cultura</a></li>
+              <li><a class="dropdown-item" href="../../corrida-9-julho/9-julho.html">Corrida 9 de Julho</a></li>
+              <li><a class="dropdown-item" href="../../bolsa-atleta/bolsa-atleta.html">Bolsa Atleta</a></li>
+              <li><a class="dropdown-item" href="../../vigilancia-sanitaria/vigilancia.html">Vigilância Sanitária</a></li>
+              <li><a class="dropdown-item" href="../../plano-diretor/plano.html">Plano Diretor</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Publicações
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="https://publicacoes.boavista.rr.gov.br/diarios/edicao/5850" target="_blank">Diários Oficias</a></li>
+              <li><a class="dropdown-item" href="https://publicacoes.boavista.rr.gov.br/editais/edicao/109" target="_blank">Editais</a></li>
+              <li><a class="dropdown-item" href="https://publicacoes.boavista.rr.gov.br/legislacoes/393" target="_blank">Leis e Decretos</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Multimídia
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Banco de Imagem</a></li>
+              <li><a class="dropdown-item" href="#">Vídeos</a></li>
+              <li><a class="dropdown-item" href="#">Download de Marcas</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://observatorio.boavista.rr.gov.br/" target="_blank">Observatório</a>
+          </li>
+        </ul>
+        <!-- <form class="d-flex" role="search"> <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+       <button class="btn btn-outline-success" type="submit">Search</button> </form> -->
+      </div>
+    </div>
+  </nav>
+
+  <!-- Submenu -->
+  <nav class="navbar d-none d-md-block navbar-expand-lg bg-white border-bottom border-3 border-dark">
+    <div class="container">
+      <ul class="navbar-nav h-100 me-auto mb-2 mb-lg-0 justify-content-center mx-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="./legislacao.html" style="cursor: pointer;">Legislação</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./domiciliares.html" style="cursor: pointer;">Resíduos Domiciliares</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./civil.html" style="cursor: pointer;">Resíduos de Const. Civil</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./saude.html" style="cursor: pointer;">Resíduos de Serv. de Saúde</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./gerenciamento.html" style="cursor: pointer;">Plano de Gerenciamento</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./logistica.html" style="cursor: pointer;">Logística Reversa</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://bvresiduos.pmbv.rr.gov.br/" target="_blank" style="cursor: pointer;">BvResíduos - Acessar</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Conteudo -->
+  <div class="row p-5 justify-content-center">
+    <div class="col-md-8">
+      <h1 class="display-6 mt-5 pb-3 text-center gestao">
+        Gestão de Resíduos
+      </h1>
+      <h4 class="mt-5 pb-3 text-center">Boa Vista é Referência Nacional no Plano de Resíduos Sólidos</h4>
+      <p class="py-4">Você sabia quea Prefeitura de Boa Vista, acompanhando as principais cidades do Brasil, já está executando o Plano Municipal de Gestão Integradade Resíduos Sólidos (PMGIRS)? <br> A capital é referência de compromisso com o meio ambiente e com a sociedade. <br> Dentre as ações implementadas pela PMBV, estão: <br> o descarte adequado de resíduos da construção civil e da saúde; <br> coleta seletiva em diversos pontos da cidade e a construção do primeiro Ecoponto, local onde será concentrado o descarte de resíduos para reciclagem. <br> Além disso, estão sendo realizados treinamentos aos representantes dos segmentos sociais quesão geradores de resíduos.</p>
+
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 py-5">
+        <div class="col">
+          <a href="../../pdf/Produto-06-PMGIRS.pdf" target="_blank" style="text-decoration: none;">
+            <div class="card h-100 text-center bg-success">
+              <div class="card-body ">
+                <h6 class="card-title fw-bold text-white py-4">Plano Municipal de Gestão de Resíduos Sólidos Final</h6>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a href="../../pdf/Lei 2004-2019 - Implementação do Plano Municipal de Gestão Integrada de Resíduos.pdf" target="_blank" style="text-decoration: none;">
+            <div class="card h-100 text-center bg-success">
+              <div class="card-body">
+                <h6 class="card-title fw-bold text-white py-4">Lei N.2004/2019 - Implementação do Plano Municipal Gestão Integrada de Resíduos</h6>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a href="../../pdf/CTR-residuos.xlsx" target="_blank" style="text-decoration: none;">
+            <div class="card h-100 text-center bg-success">
+              <div class="card-body">
+                <h6 class="card-title fw-bold text-white py-5">CTR Modelo</h6>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a href="../../pdf/DECRETO_N_ 035_E_Gestao_de_Residuos_solidos.pdf" target="_blank" style="text-decoration: none;">
+            <div class="card h-100 text-center bg-success">
+              <div class="card-body">
+                <h6 class="card-title fw-bold text-white py-2">Decreto N.035/E 2021 Regulamenta a Lei Municipal N.2.004/2019 - Plano Munic de Gestão Integrada de Resíduos</h6>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <img src="../../images/gestao-residuos-1.jpeg" alt="" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">O que são resíduos sólidos?</h5>
+              <p class="card-text">De acordo com a Lei Federal Nº 12.305/2010, resíduos sólidos são todos materiais, substâncias, objetos ou bens descartados resultantes de atividades humanas em sociedade...</p>
+
+              <div class="mb-4 mb-md-2">
+                <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#residuos">
+                  Ver mais...
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100">
+            <img src="../../images/gestao-residuos-2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Quais os tipos de Resíduos Sólidos?</h5>
+              <p class="card-text">No PMGIRS de Boa Vista, os resíduos sólidos foram classificados nos seguintes tipos...
+              </p>
+
+              <div class="mb-4 mb-md-2">
+                <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#solidos">
+                  Ver mais...
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100">
+            <img src="../../images/gestao-residuos-3.jpg" alt="" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">O que é o plano Municipal de Gestão Integrada de Resíduos Sólidos PMGIRS?</h5>
+              <p class="card-text">O Plano Municipal de Gestão Integrada de Resíduos Sólidos (PMGIRS), criado em atendimento à política nacional de resíduos sólidos...</p>
+
+              <div class="mb-4 mb-md-2">
+                <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#plano">
+                  Ver mais...
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100">
+            <img src="../../images/gestao-residuos-4.jpeg" alt="" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">Para que serve o plano Municipal de Gestão Integrada de resíduos sólidos?</h5>
+              <p class="card-text">O principal objetivo do PMGIRS é a preservação do meio ambiente através do adequado manejo e destinação dos resíduos sólidos...</p>
+
+              <div class="mb-4 mb-md-2">
+                <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#integrada">
+                  Ver mais...
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100">
+            <img src="../../images/gestao-residuos-5.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Quem participou da elaboração</h5>
+              <p class="card-text">O processo de criação do plano teve início em 2016, com a participação de diversos segmentos sociais da cidade. Até a sua implantação efetiva...
+              </p>
+
+              <div class="mb-4 mb-md-2">
+                <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#elaboracao">
+                  Ver mais...
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100">
+            <img src="../../images/gestao-residuos-6.jpg" alt="" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">O que mudou?</h5>
+              <p class="card-text">Você sabia que, com a implantação do PMGIRS, os geradores de resíduos domiciliares ou assemelhados são os responsáveis pelos resíduos de suas atividades...</p>
+
+              <div class="mb-4 mb-md-2">
+                <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#mudou">
+                  Ver mais...
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100">
+            <img src="../../images/gestao-residuos-7.jpg" alt="" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">O que é o plano de gestão de resíduos Sólidos PGRS?</h5>
+              <p class="card-text">O Plano de Gerenciamento de Resíduos Sólidos (PGRS) é o documento no qual se define diretrizes de gerenciamento ambientalmente adequado de todos os resíduos...</p>
+
+              <div class="mb-4 mb-md-2">
+                <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#gestaoResiduos">
+                  Ver mais...
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100">
+            <img src="../../images/gestao-residuos-8.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Quais são os requisitos e obrigações do PGRS?</h5>
+              <p class="card-text">Cumprir requisitos mínimos do artigo 56 da Lei Municipal 2004/2019...
+              </p>
+
+              <div class="mb-4 mb-md-2">
+                <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#requisitos">
+                  Ver mais...
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100">
+            <img src="../../images/gestao-residuos-9.jpg" alt="" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">Quais segmentos precisam se adequar ás normas e elaborar o PGTS?</h5>
+              <p class="card-text">as empresas públicas;
+                as empresas privadas;
+                as atividades comerciais e de serviços;
+                ...</p>
+
+              <div class="mb-4 mb-md-2">
+                <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#pgts">
+                  Ver mais...
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100">
+            <img src="../../images/gestao-residuos-10.jpeg" alt="" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">Quais os benefícios para a População?</h5>
+              <p class="card-text">O volume de resíduo gerado diariamente não para de crescer, além disso, o descarte desses resíduos é um dos maiores problemas vividos pela humanidade...</p>
+
+              <div class="mb-4 mb-md-2">
+                <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#populacao">
+                  Ver mais...
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100">
+            <img src="../../images/gestao-residuos-11.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Coleta seletiva</h5>
+              <p class="card-text">A coleta seletiva já é uma realidade em Boa Vista. Cerca de 40 escolas municipais já faz a separação do lixo, que é coletado todas as quintas e sextas-feiras...
+              </p>
+
+              <div class="mb-4 mb-md-2">
+                <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#coleta">
+                  Ver mais...
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100">
+            <img src="../../images/gestao-residuos-12.jpeg" alt="" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">Aterro Municipal</h5>
+              <p class="card-text">Com a implementação do PMGIRS, os resíduos da construção civil e da saúde deixaram de ser destinados ao aterro sanitário municipal e seguem com destinação específica a sua categoria...</p>
+
+              <div class="mb-4 mb-md-2">
+                <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#aterro">
+                  Ver mais...
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100">
+            <img src="../../images/gestao-residuos-13.jpg" alt="" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">Empresas autorizadas a transportar os resíduos</h5>
+              <p class="card-text">Fique atento! O transporte dos resíduos de serviços de saúde e de construção civil é de responsabilidade de seus geradores...</p>
+
+              <div class="mb-4 mb-md-2">
+                <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#empresas">
+                  Ver mais...
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100">
+            <img src="../../images/gestao-residuos-14.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Áreas de destinação dos resíduos sólidos</h5>
+              <p class="card-text">Atenção, empresários e gestores, antes de destinar os resíduos sólidos ao aterro municipal....
+              </p>
+
+              <div class="mb-4 mb-md-2">
+                <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#destinacao">
+                  Ver mais...
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100">
+            <img src="../../images/gestao-residuos-15.jpg" alt="" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">Como funcionam as licenças</h5>
+              <p class="card-text">Você empresário que precisa se adequar às novas normas para destinação dos seus resíduos sólidos, conheça o que é necessário para receber o licenciamento municipal de operação...</p>
+
+              <div class="mb-4 mb-md-2">
+                <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#licencas">
+                  Ver mais...
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100">
+            <img src="../../images/gestao-residuos-16.jpg" alt="" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">Responsabilidade Compartilhada</h5>
+              <p class="card-text">Juntos somos mais fortes! A PMBV está trabalhando arduamente para garantir a destinação consciente dos resíduos gerados em Boa Vista....</p>
+
+              <div class="mb-4 mb-md-2">
+                <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#responsabilidade">
+                  Ver mais...
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+    <!-- Aberta -->
+    <div class="modal fade" id="residuos" data-bs-keyboard="false" tabindex="-1" aria-labelledby="residuos" aria-hidden="true">
+      <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-3" id="residuos">O que são resíduos sólidos?</h1>
+          </div>
+          <div class="modal-body d-flex flex-column justity-content-center">
+            <div class="text-center mb-4">
+              <img src="../../images/gestao-residuos-1.jpeg" class="img-fluid" alt="">
+            </div>
+            <p class="w-75 mx-auto">
+              De acordo com a Lei Federal 12.305/2010, resíduos sólidos são todos materiais, substâncias, objetos ou bens descartados resultantes de atividades humanas em sociedade, a cuja destinação final se procede, se propõe proceder ou se está obrigado a proceder, nos estados sólido ou semissólido. <br> Entenda as novas diretrizes para o gerenciamento desses resíduos de acordo com a Política Nacional dos Resíduos Sólidos e o Plano Municipal de Gestão Integrada de Resíduos Sólidos.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="solidos" data-bs-keyboard="false" tabindex="-1" aria-labelledby="solidos" aria-hidden="true">
+      <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-3" id="solidos">Quais os tipos de Resíduos Sólidos?</h1>
+          </div>
+          <div class="modal-body d-flex flex-column justity-content-center">
+            <div class="text-center mb-4">
+              <img src="../../images/gestao-residuos-2.jpg" class="img-fluid" alt="">
+            </div>
+            <p class="w-75 mx-auto">
+              No PMGIRS de Boa Vista, os resíduos sólidos foram classificados nos seguintes tipos: <br> resíduos sólidos domiciliares, resíduos de construção civil, resíduos de serviços de saúde, resíduos sólidos urbanos, resíduos de galhos e podas, resíduos de mineração, resíduos de transporte, resíduos de cemitérios, resíduos de saneamento, e resíduos de logística reversa. <br> Conheça as diferentes destinações dadas a cada um deles e a sua responsabilidade nesta missão.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="plano" data-bs-keyboard="false" tabindex="-1" aria-labelledby="plano" aria-hidden="true">
+      <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-3" id="plano">Quais os tipos de Resíduos Sólidos?</h1>
+          </div>
+          <div class="modal-body d-flex flex-column justity-content-center">
+            <div class="text-center mb-4">
+              <img src="../../images/gestao-residuos-3.jpg" class="img-fluid" alt="">
+            </div>
+            <p class="w-75 mx-auto">
+              O Plano Municipal de Gestão Integrada de Resíduos Sólidos (PMGIRS), criado em atendimento à política nacional de resíduos sólidos, é um conjunto de diretrizes para a gestão dos resíduos sólidos gerados pela sociedade. <br> A Lei Municipal 2004/2019 implementou o Plano e as mudanças já começaram. <br> A partir de 19 de março de 2022, a Prefeitura passará a exigir o Plano De Gerenciamento de Resíduos Sólidos (PGRS) dos grandes geradores de resíduos sólidos domiciliares. <br> Por isso, conheça o Plano Municipal de Gestão Integrada de Resíduos Sólidos (PMGIRS) e saiba como fazer o PGRS do seu negócio, acessando abaixo.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="integrada" data-bs-keyboard="false" tabindex="-1" aria-labelledby="integrada" aria-hidden="true">
+      <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-3" id="integrada">Para que serve o plano municipal de gestão integrada de resíduos sólidos?</h1>
+          </div>
+          <div class="modal-body d-flex flex-column justity-content-center">
+            <div class="text-center mb-4">
+              <img src="../../images/gestao-residuos-4.jpeg" class="img-fluid" alt="">
+            </div>
+            <p class="w-75 mx-auto">
+              O principal objetivo do PMGIRS é a preservação do meio ambiente através do adequado manejo e destinação dos resíduos sólidos, incentivando novas formas de reutilização e uso consciente dos resíduos gerados pela sociedade. <br> O Plano visa nortear os municípios, os empresários e a sociedade em geral a se ajustarem ao cumprimento das obrigações previstas pela PNRS. <br> Conheça aqui o PMGIRS e fico por dentro das mudanças que já estão em vigor.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="elaboracao" data-bs-keyboard="false" tabindex="-1" aria-labelledby="elaboracao" aria-hidden="true">
+      <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-3" id="elaboracao">Quem participou da elaboração</h1>
+          </div>
+          <div class="modal-body d-flex flex-column justity-content-center">
+            <div class="text-center mb-4">
+              <img src="../../images/gestao-residuos-5.jpg" class="img-fluid" alt="">
+            </div>
+            <p class="w-75 mx-auto">
+              O processo de criação do plano teve início em 2016, com a participação de diversos segmentos sociais da cidade. <br> Até a sua implantação efetiva, estes segmentos se reuniram entre audiências públicas e treinamentos de esclarecimentos acerca da temática do Plano.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="mudou" data-bs-keyboard="false" tabindex="-1" aria-labelledby="plano" aria-hidden="true">
+      <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-3" id="mudou">O que mudou?</h1>
+          </div>
+          <div class="modal-body d-flex flex-column justity-content-center">
+            <div class="text-center mb-4">
+              <img src="../../images/gestao-residuos-6.jpg" class="img-fluid" alt="">
+            </div>
+            <p class="w-75 mx-auto">
+              Você sabia que, com a implantação do PMGIRS, os geradores de resíduos domiciliares ou assemelhados são os responsáveis pelos resíduos de suas atividades e pelo atendimento das diretrizes do Plano, de acordo com o seu enquadramento? </p>
+
+            <p class="w-75 mx-auto">
+              Por isso, os estabelecimentos geradores de resíduos, enquadrados na forma da lei, devem elaborar o PGRS – Plano de Gerenciamento de Resíduos Sólidos e implantá-lo. Os Grandes Geradores de Resíduos Domiciliares ficam obrigados a apresentar anualmente o Relatório Anual de Resíduos Sólidos. </p>
+
+            <p class="w-75 mx-auto">
+              A Prefeitura também está fazendo a sua parte e já implantou ações de adequação ao PMGIRS, como coleta seletiva, a instalação de ecopontos em pontos estratégicos da cidade, bem como nos bairros para entrega voluntária de resíduos recicláveis pela população, e capacitação dos setores sociais envolvidos neste Plano. Fique por dentro de todas as mudanças clicando aqui.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="gestaoResiduos" data-bs-keyboard="false" tabindex="-1" aria-labelledby="gestaoResiduos" aria-hidden="true">
+      <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-3" id="gestaoResiduos">O que é o plano de gestão de resíduos sólidos PGRS?</h1>
+          </div>
+          <div class="modal-body d-flex flex-column justity-content-center">
+            <div class="text-center mb-4">
+              <img src="../../images/gestao-residuos-7.jpg" class="img-fluid" alt="">
+            </div>
+            <p class="w-75 mx-auto">
+              O Plano de Gerenciamento de Resíduos Sólidos (PGRS) é o documento no qual se define diretrizes de gerenciamento ambientalmente adequado de todos os resíduos que são gerados no estabelecimento, determinando ações relativas a elaboração, implementação, operacionalização e monitoramento de todas as etapas do plano, nelas incluído o manejo para realização da coleta seletiva dos resíduos sólidos, o controle da disposição ambientalmente adequada, evitando-se descartes inadequados que possam gerar poluição e degradação ao meio ambiente. <br>
+              O PGRS auxilia os grandes geradores de resíduos sólidos domiciliares a identificar pontos de geração de cada tipo de resíduo, possibilitando a coleta seletiva com separação dos resíduos, por meio da elaboração e implantação do Sistema de Gestão Sustentável de Resíduos Sólidos Urbanos. <br> Entenda mais sobre essa importante ferramenta de gestão abaixo.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="requisitos" data-bs-keyboard="false" tabindex="-1" aria-labelledby="requisitos" aria-hidden="true">
+      <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-3" id="gestaoResiduos">Quais são os requisitos e obrigações do PGRS?</h1>
+          </div>
+          <div class="modal-body d-flex flex-column justity-content-center">
+            <div class="text-center mb-4">
+              <img src="../../images/gestao-residuos-8.jpg" class="img-fluid" alt="">
+            </div>
+            <ul>
+              <p class="w-75 mx-auto"> Cumprir requisitos mínimos do artigo 56 da Lei Municipal 2004/2019;</p>
+              <p class="w-75 mx-auto">O Plano deve ser elaborado por um Responsável Técnico devidamente</p>
+              <p class="w-75 mx-auto">habilitado e cadastrado no órgão ambiental.</p>
+              <p class="w-75 mx-auto"> Apresentar o PGRS na Secretaria Serviços Públicos e Meio Ambiente-SPMA, para análise e aprovação.</p>
+              <p class="w-75 mx-auto">Após aprovação do PGRS abre-se prazo de 60 (sessenta) dias para implantação efetiva em suas dependências.</p>
+              <p class="w-75 mx-auto">Apresentar ANUALMENTE o Relatório de Resíduos Sólidos.</p>
+              <p class="w-75 mx-auto">Realizar coleta seletiva em seus estabelecimentos de forma separada, com separação dos resíduos em: Resíduos Sólidos Domiciliares Recicláveis; </p>
+              <p class="w-75 mx-auto">Resíduos Sólidos Domiciliares Orgânicos; Rejeito Domiciliar.</p>
+              <p class="w-75 mx-auto"> A coleta e o transporte poderão ser feitos: por meios próprios ou por empresas terceirizadas autorizadas pela SPMA.</p>
+              <p class="w-75 mx-auto"> Os geradores de resíduos domiciliares ou assemelhados são os responsáveis pelos resíduos de suas atividades e pelo atendimento das diretrizes do serviço público de coleta seletiva de Resíduos Sólidos Domiciliares Recicláveis quando usuários da coleta pública.</p>
+              <p class="w-75 mx-auto"> Efetuar o pagamento ao Município quando optarem pelo serviço público de coleta seletiva;</p>
+              <p class="w-75 mx-auto">Se não utilizarem deverão contratar empresa licenciada pela SPMA;</p>
+              <p class="w-75 mx-auto"> Dar prioridade na contratação de Cooperativa ou Associação de Catadores de Baixa Renda, autorizados pela administração municipal, para coleta de resíduos recicláveis.</p>
+              <p class="w-75 mx-auto">Apresentar documento de Cooperativa ou Associação de Catadores de Baixa Renda, autorizados pelo órgão ambiental, quando realizarem coleta de resíduos com empresas privadas;</p>
+              <p class="w-75 mx-auto">Só é possível dispensar a contratação das Cooperativas ou Associações de Catadores devidamente regularizadas pela administração municipal para a coleta de resíduos recicláveis quando estas concederem declaração de não interesse em estabelecer contrato de prestação de serviço de coleta seletiva de resíduos sólidos domiciliares recicláveis, ou quando não cumprirem seus contratos de serviços estabelecidos, de forma regular, por um prazo maior que 60 (sessenta) dias úteis.</p>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="pgts" data-bs-keyboard="false" tabindex="-1" aria-labelledby="pgts" aria-hidden="true">
+      <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-3" id="pgts">Quais segmentos precisam se adequar ás normas e elaborar o PGTS?</h1>
+          </div>
+          <div class="modal-body d-flex flex-column justity-content-center">
+            <div class="text-center mb-4">
+              <img src="../../images/gestao-residuos-9.jpg" class="img-fluid" alt="">
+            </div>
+            <ul>
+              <p class="w-75 mx-auto">as empresas públicas;</p>
+              <p class="w-75 mx-auto"> as empresas privadas;</p>
+              <p>as atividades comerciais e de serviços;</p>
+              <p class="w-75 mx-auto">Eventos como: shows, exposições agropecuárias, eventos culturais que concentrem mais de 500
+                pessoas por dia.</p>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="populacao" data-bs-keyboard="false" tabindex="-1" aria-labelledby="populacao" aria-hidden="true">
+      <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-3" id="populacao">Quais os benefícios para a população</h1>
+          </div>
+          <div class="modal-body d-flex flex-column justity-content-center">
+            <div class="text-center mb-4">
+              <img src="../../images/gestao-residuos-10.jpeg" class="img-fluid" alt="">
+            </div>
+            <p class="w-75 mx-auto">
+              O volume de resíduo gerado diariamente não para de crescer, além disso, o descarte desses resíduos é um dos maiores problemas vividos pela humanidade. <br> Por isso, é urgente não apenas descartar, mas gerenciar o descarte de modo mais sustentável. <br> Criar um modelo circular de reaproveitamento ao reduzir, reutilizar e reciclar pode trazer enormes os benefícios para a população, que vão da preservação do meio ambiente, até a economia de gastos.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="coleta" data-bs-keyboard="false" tabindex="-1" aria-labelledby="coleta" aria-hidden="true">
+      <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-3" id="coleta">Coleta Seletiva</h1>
+          </div>
+          <div class="modal-body d-flex flex-column justity-content-center">
+            <div class="text-center mb-4">
+              <img src="../../images/gestao-residuos-11.jpeg" class="img-fluid" alt="">
+            </div>
+            <p class="w-75 mx-auto">
+              A coleta seletiva já é uma realidade em Boa Vista. <br> Cerca de 40 escolas municipais já faz a separação do lixo, que é coletado todas as quintas e sextas-feiras. <br> Para que isso fosse possível, as equipes foram capacitadas sobre a forma correta do descarte dos resíduos e a separação adequada. <br> A ação une servidores, estudantes, cooperativas e associações. <br> Além disso, a Prefeitura preferencialmente entrega os resíduos recicláveis para as associações e cooperativas de catadores de materiais reciclados credenciadas para o trabalho.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="aterro" data-bs-keyboard="false" tabindex="-1" aria-labelledby="aterro" aria-hidden="true">
+      <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-3" id="aterro">Aterro Municipal</h1>
+          </div>
+          <div class="modal-body d-flex flex-column justity-content-center">
+            <div class="text-center mb-4">
+              <img src="../../images/gestao-residuos-12.jpeg" class="img-fluid" alt="">
+            </div>
+            <p class="w-75 mx-auto">
+              Com a implementação do PMGIRS, os resíduos da construção civil e da saúde deixaram de ser destinados ao aterro sanitário municipal e seguem com destinação específica a sua categoria. <br> Atualmente não há mais famílias vivendo ou trabalhando no local. <br> Além disso, o Plano prevê o encerramento do aterro atual e a construção de um novo aterro que atenderá a população pelos próximos 20 anos.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="empresas" data-bs-keyboard="false" tabindex="-1" aria-labelledby="empresas" aria-hidden="true">
+      <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-3" id="empresas"> Empresas autorizadas a transportar os resíduos</h1>
+          </div>
+          <div class="modal-body d-flex flex-column justity-content-center">
+            <div class="text-center mb-4">
+              <img src="../../images/gestao-residuos-13.jpg" class="img-fluid" alt="">
+            </div>
+            <p class="w-75 mx-auto">
+              Fique atento! <br> O transporte dos resíduos de serviços de saúde e de construção civil é de responsabilidade de seus geradores. <br> Mas este serviço deve ser exclusivamente por transportadores licenciados pela Secretaria Municipal Serviços Públicos e Meio Ambiente. <br> A empresa de transporte deve possuir CTR - Emissão de Controle de Transporte de Resíduos. <br> Empresários do setor do transporte, confira aqui o que é necessário para se licenciar e o obter o CTR.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="destinacao" data-bs-keyboard="false" tabindex="-1" aria-labelledby="destinacao" aria-hidden="true">
+      <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-3" id="destinacao">Áreas de destinação dos resíduos sólidos</h1>
+          </div>
+          <div class="modal-body d-flex flex-column justity-content-center">
+            <div class="text-center mb-4">
+              <img src="../../images/gestao-residuos-14.jpeg" class="img-fluid" alt="">
+            </div>
+            <p class="w-75 mx-auto">
+              Atenção, empresários e gestores, antes de destinar os resíduos sólidos ao aterro municipal, proceda a reutilização, a reciclagem, a compostagem, a recuperação e o aproveitamento desse material. <br> Os resíduos da construção civil deverão ser transportados até as áreas licenciadas para que passem por um processo de triagem e destinação correta, priorizando a reutilização e a reciclagem. <br> Assim é possível que esse resíduo retorne à população como forma de agregado, por exemplo.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="licencas" data-bs-keyboard="false" tabindex="-1" aria-labelledby="licencas" aria-hidden="true">
+      <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-3" id="licencas">Como funcionam as licenças</h1>
+          </div>
+          <div class="modal-body d-flex flex-column justity-content-center">
+            <div class="text-center mb-4">
+              <img src="../../images/gestao-residuos-15.jpg" class="img-fluid" alt="">
+            </div>
+            <p class="w-75 mx-auto">
+              Você empresário que precisa se adequar às novas normas para destinação dos seus resíduos sólidos, conheça o que é necessário para receber o licenciamento municipal de operação.licencas
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="responsabilidade" data-bs-keyboard="false" tabindex="-1" aria-labelledby="responsabilidade" aria-hidden="true">
+      <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-3" id="responsabilidade">Responsabilidade Compartilhada</h1>
+          </div>
+          <div class="modal-body d-flex flex-column justity-content-center">
+            <div class="text-center mb-4">
+              <img src="../../images/gestao-residuos-16.jpg" class="img-fluid" alt="">
+            </div>
+            <p class="w-75 mx-auto">
+              Juntos somos mais fortes! <br> A PMBV está trabalhando arduamente para garantir a destinação consciente dos resíduos gerados em Boa Vista. <br> Mais do que disseminar boas práticas, a Prefeitura promove formas de inclusão social de cooperativas e associações de catadores de baixa renda, no aproveitamento de resíduos recicláveis. <br> Mas não é possível vencer essa batalha sema participação de todos. <br> É essencial que haja engajamento das empresas e a população, para que juntos consigamos salvar nosso lar, o planeta terra.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="container">
+      <footer class="py-5">
+        <div class="row">
+
+          <div class="col-6 col-md-2 mb-3">
+            <h5>Menu</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+            </ul>
+          </div>
+
+          <div class="col-6 col-md-2 mb-3">
+            <h5>Contato</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+            </ul>
+          </div>
+
+          <div class="col-6 col-md-2 mb-3">
+            <h5>Endereço</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+            </ul>
+          </div>
+
+          <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+            <div class="col mb-3">
+              <a href="#inicio" class="text-decoration-none">
+                <img src="../../images/logo-secundaria.png" alt="Logo Prefeitura" class="logoFooter" width="10%">
+              </a>
+            </div>
+            <p>&copy; 2023 Company, Inc. All rights reserved.</p>
+            <ul class="list-unstyled d-flex">
+              <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24">
+                    <use xlink:href="#twitter" />
+                  </svg></a></li>
+              <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24">
+                    <use xlink:href="#instagram" />
+                  </svg></a></li>
+              <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24">
+                    <use xlink:href="#facebook" />
+                  </svg></a></li>
+            </ul>
+          </div>
+      </footer>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.min.js" integrity="sha384-heAjqF+bCxXpCWLa6Zhcp4fu20XoNIA98ecBC1YkdXhszjoejr5y9Q77hIrv8R9i" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prefeitura Municipal de Boa Vista</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+  <!-- Menu -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="" href="#">
+        <img class="logo" src="./images/logo_horizontal.png" alt="Logo Prefeitura">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../prefeitura.html">Prefeitura</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../noticias.html">Noticias</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Canais
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="./canal-cidadao/projetos.html">Canal do Cidadão</a></li>
+              <li><a class="dropdown-item" href="./cultura/cultura.html">Cultura</a></li>
+              <li><a class="dropdown-item" href="./corrida-9-julho/9-julho.html">Corrida 9 de Julho</a></li>
+              <li><a class="dropdown-item" href="./bolsa-atleta/bolsa-atleta.html">Bolsa Atleta</a></li>
+              <li><a class="dropdown-item" href="./vigilancia-sanitaria/vigilancia.html">Vigilância Sanitária</a></li>
+              <li><a class="dropdown-item" href="./plano-diretor/plano.html">Plano Diretor</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Publicações
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="https://publicacoes.boavista.rr.gov.br/diarios/edicao/5850" target="_blank">Diários Oficias</a></li>
+              <li><a class="dropdown-item" href="https://publicacoes.boavista.rr.gov.br/editais/edicao/109" target="_blank">Editais</a></li>
+              <li><a class="dropdown-item" href="https://publicacoes.boavista.rr.gov.br/legislacoes/393" target="_blank">Leis e Decretos</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Multimídia
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Banco de Imagem</a></li>
+              <li><a class="dropdown-item" href="#">Vídeos</a></li>
+              <li><a class="dropdown-item" href="#">Download de Marcas</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://observatorio.boavista.rr.gov.br/" target="_blank">Observatório</a>
+          </li>
+        </ul>
+        <!--     <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                 </form> -->
+      </div>
+    </div>
+  </nav>
+
+  <!-- Submenu -->
+  <nav class="navbar d-none d-md-block navbar-expand-lg bg-white border-bottom border-3 border-dark">
+    <div class="container">
+      <ul class="navbar-nav h-100 me-auto mb-2 mb-lg-0 justify-content-center mx-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="https://transparencia.boavista.rr.gov.br/legislacao" target="_blank" style="cursor: pointer;">Legislação Municipal</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../secretarias.html" style="cursor: pointer;">Secretarias e Órgãos Municipais</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Servidores
+          </a>
+
+          <ul class="dropdown-menu dropdown-menu-right text-center">
+            <li><a class="dropdown-item" href="./servidores/clube.html">Clube de Vantagens</a></li>
+            <li><a class="dropdown-item" href="http://sipweb.boavista.rr.gov.br:8080/sipweb/trabalhador/login/login.xhtml" target="_blank">ContraChegue</a></li>
+            <li><a class="dropdown-item" href="http://servicos.boavista.rr.gov.br/cedulac/" target="_blank">Cédula C</a></li>
+            <li><a class="dropdown-item" href="./servidores/pagamento.html">Calendário de Pagamentos</a></li>
+            <li><a class="dropdown-item" href="./servidores/recadastramento.html">Recadastramento</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://transparencia.boavista.rr.gov.br/" target="_blank" style="cursor: pointer;">Portal da Transparência</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./acessibilidade.html" style="cursor: pointer;">Acessibilidade</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./hino.html" style="cursor: pointer;">Hino Municipal</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Conteudo -->
+
+  <div class="row p-5 justify-content-center">
+    <div class="col-md-3 fotosPrefeitos">
+      <img src="../images/arthur.jpg" class="img-fluid" alt="Imagem">
+    </div>
+    <div class="col-md-8">
+      <h2>Arthur Henrique - Prefeito</h2>
+      <p>
+        Arthur Henrique Brandão Machado nasceu em 19 de agosto de 1981, em Boa Vista (RR). Em 2020 foi eleito prefeito de Boa Vista com 116.792 votos, o equivalente a 85.36% do total.
+      </p>
+      <p>
+        Em 2016, Arthur foi eleito vice-prefeito na coligação liderada por Teresa Surita, que obteve 121.148 votos, que totalizam 79,39%. Foi o primeiro cargo político eletivo que ocupou.
+      </p>
+
+      <p>
+        Construiu sua carreira profissional em duas grandes multinacionais. Siemens, gigante da indústria mundial, e Capgemini, uma das maiores empresas de outsourcing de tecnologia do mundo.
+      </p>
+
+      <p>Em Roraima, trabalhou no serviço público municipal assumindo em 2013 a Secretaria Extraordinária de Inclusão Digital, onde ficou até abril de 2019. Na pasta, comandou a implantação da internet nas praças e espaços públicos da capital e a informatização de processos e serviços oferecidos pela prefeitura. Também foi o responsável pela instalação do Centro de Ciência Tecnologia e Inovação (CCTI), que incentiva o empreendedorismo digital entre crianças, adolescentes e jovens de Boa Vista.</p>
+
+      <p>Em 2019, assumiu a Secretaria Municipal de Educação e Cultura, onde garantiu muitas conquistas, como a implantação do novo Currículo da Educação Infantil; Robótica Educacional como parte da rotina escolar em todas as unidades de ensino, por meio do Programa para Utilização de Materiais Manipuláveis; aumentou a Gratificação de Incentivo à Docência (GID) de R$ 600,00 para R$ 800, sendo ampliado também para professores temporários; criou a Gratificação de Incentivo aos Cuidadores (GIC), com R$ 300 a mais aos cuidadores; ampliou o número de vagas com a entrega de novas escolas; valorizou professores e gestores com o Prêmio Delacir de Melo Lima e Prêmio Meritocracia, dentre outros avanços.</p>
+    </div>
+  </div>
+
+  <div class="row p-5 justify-content-center">
+    <div class="col-md-3 fotosPrefeitos">
+      <img src="../images/cassio.jpeg" class="img-fluid" alt="Imagem">
+    </div>
+    <div class="col-md-8">
+      <h2>Cássio Murilo Gomes - Vice-Prefeito</h2>
+      <p>
+        Cássio Murilo Gomes nasceu em 28 de novembro de 1974, em Curvelo (MG). Em 2020, foi eleito vice-prefeito na coligação Movimento Democrático Brasileiro (MDB) por Arthur Henrique, com resultado de 116.792 votos, totalizando 85,36%. Este é o primeiro cargo político eletivo que ocupa.
+      </p>
+      <p>
+        Bacharelado em Administração, com habilitação em Sistema de Informação em 22 de dezembro de 2006 pela Faculdade Cathedral de Ensino Superior, em Boa Vista-RR. Em Roraima, consolidou sua carreira profissional no serviço privado como gerente do Posto Trevo de 1993 até 2013.
+      </p>
+
+      <p>
+        No serviço público municipal, em 18 de junho de 2015 assume seu primeiro cargo público, na Secretaria Municipal de Saúde - SMSA, na Diretoria Executiva de Atenção à Saúde – Deas, até maio de 2016. Na pasta, comandou toda a parte administrativa da SMSA. Também foi o responsável por acompanhar de perto as melhorias e obras de reformas e revitalização das unidades básicas de saúde, além do Hospital da Criança Santo Antônio em de Boa Vista.
+      </p>
+
+      <p>Em 03 de Junho de 2016, assumiu como Secretário Adjunto ainda na Secretaria Municipal de Saúde- SMSA, onde garantiu muitas conquistas, como a construção de novas unidades básicas de saúde, em locais onde não existia nenhuma; reformas e revitalização das unidades básicas e também especializadas, como o Centro de Prevenção e Tratamento do Câncer – CPCOM. E ainda o projeto de reforma e revitalização do Hospital da Criança Santo Antônio. Realização e execução de diversas ações de Educação e Saúde tanto na capital como na área rural de Boa Vista, com vacinação antirrábica, vacinação contra gripe e sarampo, além de escovação e entrega de kits de saúde bucal.</p>
+
+      <p>Em sua gestão de adjunto enfrentou em 2018 o maior desafio, o surto de sarampo na capital, minimizado com muito planejamento e comprometimento. Fez parte da elaboração e execução do programa inovador de castração e identificação de animais, com a finalidade de controle da natalidade. Já participou e contribuiu na área da saúde como conselheiro de saúde do Estado, do município de Boa Vista, do Idoso e realizou diversas Conferências Municipais de Saúde.</p>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="container">
+    <footer class="py-5">
+      <div class="row">
+
+        <div class="col-6 col-md-2 mb-3">
+          <h5>Menu</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-md-2 mb-3">
+          <h5>Contato</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-md-2 mb-3">
+          <h5>Endereço</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+          </ul>
+        </div>
+
+        <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+          <div class="col mb-3">
+            <a href="#inicio" class="text-decoration-none">
+              <img src="../images/logo-secundaria.png" alt="Logo Prefeitura" class="logoFooter" width="10%">
+            </a>
+          </div>
+          <p>&copy; 2023 Company, Inc. All rights reserved.</p>
+          <ul class="list-unstyled d-flex">
+            <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24">
+                  <use xlink:href="#twitter" />
+                </svg></a></li>
+            <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24">
+                  <use xlink:href="#instagram" />
+                </svg></a></li>
+            <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24">
+                  <use xlink:href="#facebook" />
+                </svg></a></li>
+          </ul>
+        </div>
+    </footer>
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.min.js" integrity="sha384-heAjqF+bCxXpCWLa6Zhcp4fu20XoNIA98ecBC1YkdXhszjoejr5y9Q77hIrv8R9i" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
